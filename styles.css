@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Tapestry&display=swap");
+
+*{
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+body {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+.haut-depage {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.haut-depage img {
+  padding: 0px 10px;
+}
+.liennav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+.liens {
+  padding: 30px 20px;
+  display: flex;
+  border-top: 5px solid #0065FC;
+  text-decoration: none;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+.premiere_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.recherche {
+  display: flex;
+  margin-bottom: 20px;
+}
+#map {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px 0px 0px 10px;
+  background-color:  #DEEBFF;
+  font-size: larger;
+}
+
+.recherche input {
+  padding-left: 20px;
+  border: 1px solid  #DEEBFF;
+  font-size: larger;
+  font-weight: bold;
+}
+.recherche button {
+  background-color:#0065FC ;
+  border-color:  #DEEBFF;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.section_filtre {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.filters {
+  margin: 10px 10px;
+  border: 1px solid lightblue;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+}
+.section_filtre .fa-solid {
+  display: flex;
+  background-color:  #DEEBFF;
+  color:#0065FC;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_filtre p {
+  display: flex;
+  width: 140px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.info_logement {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.fa-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#0065FC;
+  border-radius: 50%;
+  border: 1px solid lightblue;
+  width: 30px;
+  height: 30px;
+}
+
+/*  
+main{
+  border: 1px solid red;
+  display: flex;
+  width: 100%;
+}
+main img{
+  width: 320px;
+  height: 120px;
+  display: flex;
+  margin: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.section_hebergement{
+  border: 1px solid ;
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.bgimg{
+  background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  height: 150px;
+  width: 280px;
+  background-size: cover;
+}
+.dodo{
+  background-color: #fff;
+
+
+}
+/* .divh2{display: block;}    */
+
+
+/* premier essai booki parti carte hebergement et populaire */
+
+
+main {
+  display: flex;
+  justify-content:space-between;
+  gap: 20px;
+ /* flex-flow: wrap-reverse;  */
+} 
+.section_hebergement {
+  /* border: 4px solid red; */
+  width: 880px;
+ 
+  border-radius: 15px;
+  background-color: lightgray;
+  padding: 20px;
+  
+}
+.carte-hebergement a {
+  text-decoration: none;
+  color: black;
+}
+
+.cartes-hebergement{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 66%;
+  gap: 10px;
+
+}
+.carte-hebergement i {
+  color: #0065FC;
+}
+.fa-gris{
+  color: #727272!important;
+}
+.populaire{
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap-reverse;
+    width: 100%;
+    height: 100%;
+    flex-basis: 33%;
+}
+.populaire img{
+  border-radius: 15px 0px 0px 15px;
+  width: 22px;
+  
+}
+.carte-hebergement {
+
+  background-color: #fff;
+  border-radius: 15px ;
+  margin-top: 10px;
+  width: 245px;
+  padding: 5px;
+
+
+  }
+
+.appart img{
+
+
+  width: 100%;
+  height: 160px;
+  border-radius: 15px 15px 0px 0px;
+  }
+
+
+.populaire div{
+  background-color: #fff;
+  border-radius: 10px;
+
+}

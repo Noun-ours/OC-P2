@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/85dd9517f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Tapestry&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <title>booki</title>
+  </head>
+  <body>
+    <header class="haut-depage">
+      <div>
+        <img
+          src="images/logo/Booki.png"
+          width="150px"
+          height="70px"
+          alt="logo du site"
+        />
+      </div>
+
+      <nav class="liennav">
+        <a class="liens" href="#">Hébergements</a>
+        <a class="liens" href="#">Activités</a>
+      </nav>
+    </header>
+    <section class="premiere_section">
+      <div class="titre">
+        <h1>Trouvez votre hébergement pour des vacances de reve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+      </div>
+
+      <!-- <input type="search" placeholder="merci" value="Marseille, France" /> -->
+      <!-- pour etre plus semantique je pense que la formule avec un formulaire et plus apprecier ont fera comme ceci
+    <form >
+        <span>
+            <i class="fa-solid fa-location-dot"></i>
+        </span>
+        <input type="search" placeholder="Marseille, France">
+        <button>Rechercher</button>
+    </form>
+-->
+
+      <div class="recherche">
+        <i id="map" class="fa-solid fa-location-dot"></i>
+        <input type="search" placeholder="Marseille, France" />
+        <button>Rechercher</button>
+      </div>
+    </section>
+    <section class="section_filtre">
+      <h2>Filtres</h2>
+      <div class="filters">
+        <i class="fa-solid fa-money-bill-wave"></i>
+        <p>Economique</p>
+      </div>
+
+      <div class="filters">
+        <i class="fa-solid fa-child-reaching"></i>
+        <p>Familial</p>
+      </div>
+
+      <div class="filters">
+        <i class="fa-solid fa-heart"></i>
+        <p>Romantique</p>
+      </div>
+
+      <div class="filters">
+        <i class="fa-solid fa-dog"></i>
+        <p>Animaux autorisés</p>
+      </div>
+    </section>
+    <div class="info_logement">
+      <i class="fa-solid fa-info"></i>
+      <p>Plus de 500 logements sont disponible dans cette ville</p>
+    </div>
+    <main>
+      <section class="section_hebergement">
+        <h2>Hebergements a Marseille</h2>
+
+        <!-- ce sont des cartes cliquable a inserer dans une balise  <a>-->
+        <article class="dodo">
+          <a href="#">
+            <div class="appart">
+              <img
+                src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                alt=""/>
+             </div> 
+
+              <h3>auberge la cannebiere</h3>
+              <p>Nuit a partir de <strong>25€</strong></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </a>
+        </article>
+        <article class="dodo">
+          <a href="#">
+            <div class="appart">
+              <img
+                src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Hotel du port</h3>
+              <p>Nuit a partir de <strong>52€</strong></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </a>
+        </article>
+
+        <article class="dodo">
+          <a href="#">
+            <div class="appart">
+              <img
+                src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Hotel Les mouettes</h3>
+              <p>Nuit a partir de <strong>76€</strong></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </a>
+        </article>
+
+        <article class="dodo">
+          <a href="#">
+            <div class="appart">
+              <img
+                src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Hotel de la mer</h3>
+              <p>Nuit a partir de <strong>46€</strong></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </a>
+        </article>
+        <article class="dodo">
+          <a href="#">
+            <div class="appart">
+              <img
+                src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Auberge le panier</h3>
+              <p>Nuit a partir de <strong>23€</strong></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </a>
+        </article>
+        <article class="dodo">
+          <a href="#">
+            <div class="appart">
+              <img
+                src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Hotel chez Amina</h3>
+              <p>Nuit a partir de <strong>96€</strong></p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </a>
+        </article>
+        <a href="">afficher plus</a>
+      </section>
+      <aside class="polulaire">
+        <article>
+          <h2>Les plus populaires</h2>
+          <a href="">
+            <div>
+              <img
+                src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Hotel Le soleil du matin</h3>
+            <p>Nuit a partir de <strong>128€</strong></p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </a>
+        </article>
+        <article>
+          <a href="">
+            <div>
+              <img
+                src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Au coeur de l'eau Chambres d'hotes</h3>
+            <p>Nuit a partir de <strong>71€</strong></p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </a>
+        </article>
+        <article>
+          <a href="">
+            <div>
+              <img
+                src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Hotel Tout bleu et Blanc</h3>
+            <p>Nuit a partir de <strong>68€</strong></p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </a>
+        </article>
+      </aside>
+    </main>
+    <section class="activite">
+      <article>
+
+        <h2>Activites a Marseille</h2>
+        <a href="">
+
+          <div>
+            <img src="" alt="">
+          </div>
+          <p></p>
+          
+        </a>
+      </article>
+
+      <article>
+
+        <a href="">
+          
+          <div>
+            <img src="" alt="">
+          </div>
+          <p></p>
+          
+        </a>
+      </article>
+      <article>
+
+      <a href="">
+
+        <div>
+          <img src="" alt="">
+        </div>
+        <p></p>
+        
+      </a>
+      </article>
+      <article>
+
+       <a href="">
+
+         <div>
+           <img src="" alt="">
+          </div>
+          <p></p>
+          
+        </a>
+      </article>
+      <article>
+
+      <a href="">
+        
+        <div>
+          <img src="" alt="">
+        </div>
+        <p></p>
+        
+      </a>
+      </article>
+      <article>
+
+      <a href="">
+        
+        <div style="background-image: url( ./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) ;">
+          <img src="" alt="">
+        </div>
+        <p></p>
+        
+      </a>
+      </article>
+    </section>
+    <footer>
+      <div>
+        <h4>A propos</h4>
+        <a href="">Fonctionnement du site</a>
+        <a href="">Conditions géneral de vente</a>
+        <a href="">Données et confidentialités</a>
+      </div>
+      <div>
+        <h4>Nos hébergements</h4>
+        <a href="">Charte de qualité</a>
+        <a href="">Soumettre votre hotel</a>
+      </div>
+
+      <div>
+        <h4>Assistance</h4>
+        <a href="">Centre d'aide</a>
+        <a href="">Nous contacter</a>
+      </div>
+
+    </footer>
+  </body>
+</html>
