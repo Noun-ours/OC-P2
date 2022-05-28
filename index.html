@@ -25,13 +25,13 @@
       </div>
 
       <nav class="liennav">
-        <a class="liens" href="#">Hébergements</a>
-        <a class="liens" href="Activités a Marseille">Activités</a>
+        <a class="liens" href="#heberge">Hébergements</a>
+        <a class="liens" href="#activMars">Activités</a>
       </nav>
     </header>
     <div class="container">
 
-      <section class="premiere_section">
+      <section class="section-header">
         <div class="titre">
           <h1>Trouvez votre hébergement pour des vacances de reve</h1>
           <p>En plein centre ville ou en pleine nature</p>
@@ -82,7 +82,7 @@
     </div>
     <main>
       <section class="section-hebergement">
-        <h2>Hebergements a Marseille</h2>
+        <h2 id="heberge">Hebergements a Marseille</h2>
         
         <div class="cartes-hebergement">
           <!-- ce sont des cartes cliquable a inserer dans une balise  <a>-->
@@ -92,12 +92,12 @@
                 <picture>
                   <source media="(min-width:992px)" srcset="/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                   <source media="(min-width:768px)" srcset="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                </picture>
                   <img
                     src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                     alt=""
                   />
                 
-                </picture>
                 
               </div>
               <div>
@@ -256,7 +256,7 @@
             <a href="">
               <div class="titre-populaire">
                 <img
-                src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
                 alt=""
                 />
                 <div>
@@ -315,7 +315,7 @@
     </aside>
     </main>
     <section class="activite">
-      <h2>Activites a Marseille</h2>
+      <h2 id="activMars">Activites a Marseille</h2>
       <div class="grid-activite">
 
         <article class="carte-grid carte-vieux-port">
@@ -330,7 +330,11 @@
       <article class="carte-grid carte-fort">
         <a href="">
           <div>
-            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" />
+            <picture>
+              <source media="(min-width:992px)" srcset="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+              <source media="(min-width:768px)" srcset="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+              <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" />
+            </picture>
           </div>
           <h3>Fort de Pomégues</h3>
         </a>
