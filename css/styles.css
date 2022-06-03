@@ -1,12 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Tapestry&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   /* max-width: 1440px; */
-
 }
-img ,picture{
+img,
+picture {
   display: block;
   max-width: 100%;
 }
@@ -15,16 +16,16 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
 }
-.container,header{
+.container,
+header {
   margin-inline: auto;
   max-width: 1440px;
-
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
-p{
+p {
   font-weight: 100;
 }
 
@@ -32,12 +33,11 @@ p{
   /* border: 1px solid green; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 15px;
-  /* flex-flow: wrap-reverse; */
   flex-wrap: wrap;
 }
-.logo{
+.logo {
   /* display:flex; */
 }
 .haut-depage img {
@@ -48,18 +48,22 @@ p{
 }
 .liennav {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-end;
 }
 .liens {
   padding: 30px 20px;
   display: flex;
-  border-top: 5px solid #0065fc;
+  border-top: 3px solid transparent;
   text-decoration: none;
   justify-content: flex-end;
   margin-right: 50px;
 }
-.titre{
+.liens:hover {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+}
+.titre {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -99,13 +103,10 @@ p{
   border-radius: 0px 10px 10px 0px;
   padding: 10px 20px;
   cursor: pointer;
-  
-} 
-.fa-magnifying-glass{
+}
+.fa-magnifying-glass {
   display: none;
 }
-
-
 
 .section_filtre {
   width: 100%;
@@ -113,7 +114,6 @@ p{
   /* justify-content: space-between; */
   align-items: center;
   flex-wrap: wrap;
-  
 }
 .filters {
   margin: 10px 10px;
@@ -124,10 +124,9 @@ p{
   border-radius: 50px;
   transition-duration: 0.1s;
 }
-.filters:hover{
+.filters:hover {
   background-color: #f2f2f2;
-  transform: scale(1.0);
-
+  transform: scale(1);
 }
 .section_filtre .fa-solid {
   display: flex;
@@ -168,13 +167,6 @@ p{
   height: 30px;
 }
 
-
-
-
-
-
-
-
 /* premier essai booki parti carte hebergement et populaire */
 
 main {
@@ -214,15 +206,19 @@ main {
   border-radius: 15px;
   margin-top: 10px;
   width: 245px;
-  padding: 5px ;
+  padding: 5px;
   box-shadow: 0px 0px 16px #0000002e;
   transition: 0.6s;
 }
-.carte-hebergement:hover{
+.carte-hebergement:hover {
   transform: scale(1.1);
 }
 .carte-hebergement i {
   color: #0065fc;
+}
+.espace-deligne {
+  padding: 10px 10px;
+  line-height: 25px;
 }
 .fa-gris {
   color: lightgray !important;
@@ -233,7 +229,7 @@ main {
   height: 120px;
   border-radius: 15px 15px 0px 0px;
 }
-.affichagesup{
+.affichagesup {
   display: block;
   margin: 25px 25px;
 }
@@ -245,9 +241,9 @@ main {
   /* flex-direction: column; */
   background-color: #f2f2f2;
   border-radius: 15px;
-  padding: 10px ;
+  padding: 10px;
   /* width: 420px; */
-  height: 100%;
+  /* height: 100%; */
   /* gap: 10px; */
 }
 .titre-etoile {
@@ -285,8 +281,13 @@ main {
   padding: 5px;
   transition: 0.5s;
 }
-.carte-populaire:hover{
+.carte-populaire:hover {
   transform: scale(1.1);
+}
+.carte-titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*  */
@@ -303,12 +304,11 @@ main {
   padding: 5px;
   /* line-height: 1.5rem; */
 }
-.titre-populaire p{
+.titre-populaire p {
   /* margin: -8px 5px; */
   /* font-weight: 100; */
-
 }
-.titre-populaire h3{
+.titre-populaire h3 {
   /* margin: 5px 5px; */
 }
 .etoiles {
@@ -318,13 +318,10 @@ main {
   margin: 0px 5px;
 }
 
-
-
 /* activités a Marseille */
 
-
 /*  */
-.activite h2{
+.activite h2 {
   margin-top: 70px;
   margin-bottom: 25px;
 }
@@ -333,14 +330,13 @@ main {
   background-color: #fff;
   /* width: 360px; */
   margin: 15px 25px;
-  
 }
 
 .grid-activite {
   /* margin-top: 55px; */
   /* background-color: #f2f2f2; */
   display: grid;
-  grid-template-columns: repeat(4, 322px );
+  grid-template-columns: repeat(4, 322px);
   grid-template-rows: repeat(9, 35px);
   gap: 20px;
   grid-template-areas:
@@ -365,7 +361,6 @@ main {
 }
 .carte-parc {
   grid-area: parc_national;
-  
 }
 .carte-frioul {
   grid-area: frioul;
@@ -388,33 +383,31 @@ main {
   height: auto;
   transition: 0.5s;
 }
-.carte-grid:hover{
+.carte-grid:hover {
   transform: scale(1.1);
 }
-.carte-grid img{
+.carte-grid img {
   object-fit: cover;
   object-position: center;
   /* position: absolute; */
   /* height: 350px */
 }
-.carte-vieux-port img{
+.carte-vieux-port img {
   height: 600px;
   /* position: relative; */
 }
-.carte-parc img{
+.carte-parc img {
   /* position: relative; */
   height: 600px;
 }
-
-
-.carte-longchamp img{
-  /* position: relative; */
+.carte-dame img {
+  max-width: 100%;
+  height: auto;
 }
 
-
-
-
-
+.carte-longchamp img {
+  /* position: relative; */
+}
 
 footer {
   background-color: #f2f2f2;
@@ -434,44 +427,57 @@ footer div {
   /* padding-bottom: 40px; */
 }
 
-.section-footer{
-  display:flex;
+.section-footer {
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width:1440px;
+  max-width: 1440px;
   margin-inline: auto;
-
 }
-h4{
-  font-size:larger;
+h4 {
+  font-size: larger;
   font-weight: bold;
 }
-footer a{
+footer a {
   font-weight: 100;
 }
-
+@media (max-width: 1440px) {
+  .aside-populaire {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .cartes-populaire {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 80%;
+  }
+  .carte-populaire {
+    /* width: 31%; */
+    word-wrap: break-word;
+  }
+}
 /* premiere media query affichage tablette */
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .grid-activite {
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: repeat(2, 150px); */
     grid-template-rows: repeat(3, 200px);
     gap: 20px;
     grid-template-areas:
-      "vieux_port pomegues" 
+      "vieux_port pomegues"
       "parc_national dame"
       "frioul longchamp";
   }
+}
 
- }
-
- @media  (max-width:992px) {
-
-  .container, header{
+@media (max-width: 992px) {
+  .container,
+  header {
     padding-inline: 32px;
   }
-  .aside-populaire{
+  /* .aside-populaire{
     flex-basis: 100%;
     max-width: 100%;
   }
@@ -484,90 +490,106 @@ footer a{
   .carte-populaire{
     width: 31%;
     word-wrap: break-word;
-  }
-  .section-hebergement{
+  } */
+  .section-hebergement {
     width: 100%;
   }
-  .cartes-hebergement{
+  .cartes-hebergement {
     margin-right: 20px;
-  
   }
-  .activite{
+  .activite {
     padding-inline: 20px;
   }
-  
-  .carte-grid a, .carte-grid img{
+
+  .carte-grid a,
+  .carte-grid img,
+  .carte-grid picture {
     width: 100%;
   }
+  /* ******************** */
+
+  /* ******************** */
 
 }
 
-
-
-
-  @media (max-width:768px) {
-  *{
-    /* max-width: 100%; */
+@media (max-width: 768px) {
+  * {
+    max-width: 100% !important;
   }
 
-  
-  
-  
-    .grid-activite {
-      display: block;
-  } 
-  .carte-grid{
+  .grid-activite {
+    display: block;
+  }
+  .carte-grid {
     height: 190px;
     margin-bottom: 25px;
-
   }
-  
-    .section-footer{
-      flex-direction: column;
-      padding: 30px;
-    }
-  
-    .recherche button{
-      border-radius: 10px 10px 10px 10px;
-      
-    }
-      .recherche span{
-        display: none;
-        
-      }
-      .fa-magnifying-glass{
-        display: inline;
-      }
-      .liens{
-        border-bottom:5px solid #0065fc;
-        border-top: none;
-      }
-      .section-hebergement{
-        background-color: inherit;
-      }
-      .carte-hebergement{
-        width: 100%;
-      }
-      .aside-populaire{
-        width: 104%;
 
-      }
-      .cartes-populaire{
-     flex-direction: column;
-     }
-     .carte-populaire{
-       min-width: fit-content;
-     }
-      article{
-        width: 360px;
-      }
-      .container,header{
-        padding: 0px;
-      }
+  .section-footer {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .haut-depage {
+    border-bottom: 3px solid #f2f2f2;
+    display: flex;
+    justify-content: center;
+  }
+  .section-header {
+    padding: 0 15px;
+  }
+  .recherche {
+    padding: 0 15px;
+  }
+  .recherche button {
+    border-radius: 10px 10px 10px 10px;
+  }
+  .recherche span {
+    display: none;
+  }
+  .fa-magnifying-glass {
+    display: inline;
+  }
+  .recherche input {
+    width: 70%;
+  }
+  .liens {
+    border-top: none;
+  }
+
+  .liens:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+  }
+  .section_filtre {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 15px;
+  }
+  .info_logement {
+    margin-inline: 15px;
+  }
+  .section-hebergement {
+    background-color: inherit;
+  }
+  .carte-hebergement {
+    width: 100%;
+  }
+  .aside-populaire {
+    width: 104%;
+  }
+  .cartes-populaire {
+    flex-direction: column;
+  }
+  .carte-populaire {
+    min-width: fit-content;
+  }
+  .titre-populaire {
+  }
+  article {
+    width: 360px;
+  }
+  .container,
+  header {
+    padding: 0px;
+  }
 }
-
-
-
-
-
-  
